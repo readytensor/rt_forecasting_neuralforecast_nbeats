@@ -1,0 +1,17 @@
+{
+  "history_forecast_ratio": 10,
+  "lags_forecast_ratio": 4,
+  "stack_types": ["identity", "trend", "seasonality"],
+  "n_blocks": [1, 1, 1],
+  "mlp_units": [[512, 512], [512, 512], [512, 512]],
+  "activation": "ReLU",
+  "shared_weights": false,
+  "max_steps": 500,
+  "learning_rate": 0.001,
+  "num_lr_decays": 3,
+  "local_scaler_type": "minmax",
+  "use_exogenous": true,
+  "trainer_kwargs": {"accelerator": "gpu"},
+  "random_state": 0
+  
+}
