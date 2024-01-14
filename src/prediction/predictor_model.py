@@ -3,12 +3,11 @@ import warnings
 import joblib
 import numpy as np
 import pandas as pd
-from typing import Optional
 from schema.data_schema import ForecastingSchema
 from sklearn.exceptions import NotFittedError
 from neuralforecast.models import NBEATS
 from neuralforecast import NeuralForecast
-from lightning.pytorch.callbacks import EarlyStopping
+from pytorch_lightning.callbacks import EarlyStopping
 import torch
 
 warnings.filterwarnings("ignore")
@@ -168,8 +167,7 @@ class Forecaster:
                 batch_size=batch_size,
                 step_size=step_size,
                 random_seed=random_state,
-                trainer_kwargs=trainer_kwargs,
-                **kwargs,
+                **trainer_kwargs,
             )
         ]
 
