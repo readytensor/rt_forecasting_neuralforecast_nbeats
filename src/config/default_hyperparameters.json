@@ -3,7 +3,7 @@
   "lags_forecast_ratio": 3,
   "stack_types": ["identity", "identity"],
   "n_blocks": [2, 2],
-  "mlp_units": [[512, 512], [512, 512]],
+  "mlp_units": [[64, 64], [64, 64]],
   "activation": "ReLU",
   "shared_weights": false,
   "max_steps": 1000,
