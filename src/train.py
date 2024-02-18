@@ -7,7 +7,7 @@ from prediction.predictor_model import (
     train_predictor_model,
 )
 from schema.data_schema import load_json_data_schema, save_schema
-from utils.utils import (
+from utils import (
     read_csv_in_directory,
     read_json_as_dict,
     set_seeds,

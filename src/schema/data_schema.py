@@ -4,7 +4,7 @@ from typing import Dict, List, Tuple
 import joblib
 
 from data_models.schema_validator import validate_schema_dict
-from utils.utils import read_json_as_dict
+from utils import read_json_as_dict
 
 SCHEMA_FILE_NAME = "schema.joblib"
 
